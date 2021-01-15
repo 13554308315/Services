@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_all"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_A"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:src="@drawable/bg_title" />
+
+            <com.xiong.services.LetterSpacingTextView
+                android:id="@+id/tv_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50.0dip"
+                android:text="@string/txt_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/defult_1"
+                android:textStyle="bold"
+                app:textSpacing="10.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="4.0dip"
+        android:background="@android:color/white" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="5.0"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_B"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/tv_B"
+                    android:layout_width="115.0dip"
+                    android:layout_height="115.0dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:background="@drawable/bg_fa"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/defult_2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:text="智慧法律服务"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/defult_1" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="4.0dip"
+                android:background="@android:color/white" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+<!--                <View-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="8.0dip"-->
+<!--                    android:background="@android:color/white" />-->
+
+                <include layout="@layout/layout_left_bottom" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="4.0dip"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white" />
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.0">
+
+            <include layout="@layout/layout_right_bottom" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
